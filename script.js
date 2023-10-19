@@ -105,8 +105,25 @@ function loadAndDisplaySolutionjava() {
         }
     };
     xhr.send();
+}    function loadAndDisplaySolutionpy() {
+    const modal = document.getElementById(`Python-modal-set2`);
+    const modalContent = document.querySelector(`#Python-modal-set2 .modal-content`);
+    // Use AJAX to load the solution content from the server
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", `solutions/python_solution.txt`, true);
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            modalContent.innerHTML = `<h4>Python Language Solutions (Set 2)</h4>` + xhr.responseText;
+            modalContent.innerHTML += '<span class="close-button" onclick="closeModal(\'' +"Python"+ '-modal-set2\')">&times;</span>';
+       modal.style.display = "block";
+        } else {
+            modalContent.innerHTML = `<p>Failed to load Python solutions.</p>`;
+            modal.style.display = "block";
+        }
+    };
+    xhr.send();
+    
 }
-
 
 
 const showCSolutionButtonSet2 = document.getElementById("show-c-solution-button-set2");
@@ -115,7 +132,7 @@ const showJavaSolutionButtonSet2 = document.getElementById("show-java-solution-b
 showJavaSolutionButtonSet2.addEventListener("click", () => loadAndDisplaySolutionjava());
 
 const showPythonSolutionButtonSet2 = document.getElementById("show-python-solution-button-set2");
-showPythonSolutionButtonSet2.addEventListener("click", () => loadAndDisplaySolution("Python"));
+showPythonSolutionButtonSet2.addEventListener("click", () => loadAndDisplaySolutionpy("Python"));
 
 
  // Function to show the iframe
@@ -129,4 +146,3 @@ showPythonSolutionButtonSet2.addEventListener("click", () => loadAndDisplaySolut
     var iframeContainer = document.getElementById('iframe-container');
     iframeContainer.style.display = 'none';
   });
-  
