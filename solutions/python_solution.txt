@@ -1,0 +1,63 @@
+Program to Determine if a Number is Odd or Even:<br>
+# Input a number from the user<br>
+number = int(input("Enter a number:")<br>
+
+# Check if the number is odd or even<br>
+if number % 2 == 0:<br>
+    print("The number is even.")<br>
+else:<br>
+    print("The number is odd.")<br><br>
+
+# Input a year from the user<br>
+year = int(input("Enter a year:")<br>
+
+# Check if it's a leap year<br>
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):<br>
+    print("It's a leap year.")<br>
+else:<br>
+    print("It's not a leap year.")<br><br>
+
+import math<br>
+
+# Input the coordinates of two points<br>
+x1, y1 = map(float, input("Enter the coordinates of the first point (x1 y1): ").split())<br>
+x2, y2 = map(float, input("Enter the coordinates of the second point (x2 y2): ").split())<br>
+
+# Calculate the Euclidean distance<br>
+distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)<br>
+
+print("The Euclidean distance between the two points is:", distance)<br><br>
+
+# Input three angles from the user<br>
+angle1 = int(input("Enter the first angle:")<br>
+angle2 = int(input("Enter the second angle:")<br>
+angle3 = int(input("Enter the third angle:")<br>
+
+# Check if the angles can form a triangle<br>
+if angle1 + angle2 + angle3 == 180:<br>
+    print("These angles can form a triangle.")<br>
+else:<br>
+    print("These angles cannot form a triangle.")<br><br>
+
+# Input cost price and selling price from the user<br>
+cost_price = float(input("Enter the cost price:")<br>
+selling_price = float(input("Enter the selling price:")<br>
+
+# Calculate profit or loss<br>
+profit = selling_price - cost_price<br>
+if profit > 0:<br>
+    print("You made a profit of", profit)<br>
+elif profit < 0:<br>
+    print("You incurred a loss of", -profit)<br>
+else:<br>
+    print("No profit, no loss.")<br><br>
+
+# Input principal amount, rate of interest, and time period<br>
+principal = float(input("Enter the principal amount:")<br>
+rate_of_interest = float(input("Enter the rate of interest (in percentage):")<br>
+time_period = float(input("Enter the time period (in years):")<br>
+
+# Calculate simple interest<br>
+simple_interest = (principal * rate_of_interest * time_period) / 100<br>
+
+print("The simple interest is:", simple_interest)<br>

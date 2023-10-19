@@ -1,0 +1,112 @@
+Java Solution 1:<br>
+import java.util.Scanner;<br>
+
+public class OddEven {<br>
+    public static void main(String[] args) {<br>
+        Scanner input = new Scanner(System.in);<br>
+        System.out.print("Enter a number: ");<br>
+        int number = input.nextInt();<br>
+        if (number % 2 == 0) {<br>
+            System.out.println("The number is even.");<br>
+        } else {<br>
+            System.out.println("The number is odd.");<br>
+        }<br>
+    }<br>
+}<br>
+
+Java Solution 2 :<br>
+import java.util.Scanner;<br>
+
+public class LeapYear {<br>
+    public static void main(String[] args) {<br>
+        Scanner input = new Scanner(System.in);<br>
+        System.out.print("Enter a year: ");<br>
+        int year = input.nextInt();<br>
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {<br>
+            System.out.println("The year is a leap year.");<br>
+        } else {<br>
+            System.out.println("The year is not a leap year.");<br>
+        }<br>
+    }<br>
+}<br>
+
+Java Solution 3 :<br>
+import java.util.Scanner;<br>
+
+public class EuclideanDistance {<br>
+    public static void main(String[] args) {<br>
+        Scanner input = new Scanner(System.in);<br>
+        System.out.print("Enter x1: ");<br>
+        double x1 = input.nextDouble();<br>
+        System.out.print("Enter y1: ");<br>
+        double y1 = input.nextDouble();<br>
+        System.out.print("Enter x2: ");<br>
+        double x2 = input.nextDouble();<br>
+        System.out.print("Enter y2: ");<br>
+        double y2 = input.nextDouble();<br>
+
+        double distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));<br>
+        System.out.println("The Euclidean distance is: " + distance);<br>
+    }<br>
+}<br>
+
+Java Solution 4 :<br>
+import java.util.Scanner;<br>
+
+public class TriangleCheck<br> {
+    public static void main(String[] args) {<br>
+        Scanner input = new Scanner(System.in);<br>
+        System.out.print("Enter the first angle: ");<br>
+        int angle1 = input.nextInt();<br>
+        System.out.print("Enter the second angle: ");<br>
+        int angle2 = input.nextInt();<br>
+        System.out.print("Enter the third angle: ");<br>
+        int angle3 = input.nextInt();<br>
+
+        if (angle1 + angle2 + angle3 == 180 && angle1 > 0 && angle2 > 0 && angle3 > 0) {<br>
+            System.out.println("These angles can form a triangle.");<br>
+        } else {
+            System.out.println("These angles cannot form a triangle.");
+        }<br>
+    }<br>
+}<br>
+
+Java Solution 5 :<br>
+import java.util.Scanner;<br>
+
+public class ProfitLoss {<br>
+    public static void main(String[] args) {<br>
+        Scanner input = new Scanner(System.in);<br>
+        System.out.print("Enter the cost price: ");<br>
+        double costPrice = input.nextDouble();<br>
+        System.out.print("Enter the selling price: ");<br>
+        double sellingPrice = input.nextDouble();<br>
+
+        if (costPrice < sellingPrice) {<br>
+            System.out.println("It's a profit.");<br>
+        } else if (costPrice > sellingPrice) {<br>
+            System.out.println("It's a loss.");<br>
+        } else {
+            System.out.println("There is no profit or loss.");
+        }<br>
+    }<br>
+}<br>
+
+Java Solution 6:<br>
+import java.util.Scanner;<br>
+
+public class SimpleInterest {<br>
+    public static void main(String[] args) {<br>
+        Scanner input = new Scanner(System.in);<br>
+        System.out.print("Enter the principal amount: ");<br>
+        double principal = input.nextDouble();<br>
+        System.out.print("Enter the rate of interest: ");<br>
+        double rate = input.nextDouble();<br>
+        System.out.print("Enter the time period (in years): ");<br>
+        double time = input.nextDouble();<br>
+
+        double interest = (principal * rate * time) / 100;<br>
+        System.out.println("The simple interest is: " + interest);<br>
+    }<br>
+}<br>
+

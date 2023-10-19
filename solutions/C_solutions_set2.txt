@@ -1,0 +1,105 @@
+
+use angular brakets for include libraries <br>
+1. Program to Determine Odd or Even Number<br>
+
+#include stdio.h<br>
+
+int main() {<br>
+    int number;
+    printf("Enter a number: ");<br>
+    scanf("%d", &number);<br>
+
+    if (number % 2 == 0) {<br>
+        printf("The number is even.\n");<br>
+    } else {<br>
+        printf("The number is odd.\n");<br>
+    }<br>
+
+    return 0;<br>
+}
+<br><br>
+2. Program to Determine Leap Year<br>
+
+#include stdio.h<br>
+
+int main() {<br>
+    int year;<br>
+    printf("Enter a year: ");<br>
+    scanf("%d", &year);<br>
+
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {<br>
+        printf("It is a leap year.\n");<br>
+    } else {
+        printf("It is not a leap year.\n");<br>
+    }
+
+    return 0;<br>
+}<br>
+
+3. Program to Find Euclidean Distance between Two Coordinates<br>
+#include stdio.h<br>
+#include math.h<br>
+
+int main() {<br>
+    double x1, y1, x2, y2;<br>
+    printf("Enter the coordinates (x1 y1 x2 y2): ");<br>
+    scanf("%lf %lf %lf %lf", &x1, &y1, &x2, &y2);<br>
+
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));<br>
+    printf("Euclidean Distance: %.2lf\n", distance);<br>
+
+    return 0;<br>
+}<br>
+
+4. Program to Check if Three Angles Can Form a Triangle<br>
+#include stdio.h<br>
+
+int main() {
+    int angle1, angle2, angle3;<br>
+    printf("Enter three angles: ");<br>
+    scanf("%d %d %d", &angle1, &angle2, &angle3);<br>
+
+    if (angle1 + angle2 + angle3 == 180)<br> {
+        printf("It can form a triangle.\n");
+    } else<br> {
+        printf("It cannot form a triangle.\n");
+    }
+<br>
+    return 0;<br>
+}<br>
+
+5. Program to Determine Profit or Loss<br>
+#include stdio.h<br>
+
+int main() {<br>
+    float costPrice, sellingPrice;<br>
+    printf("Enter cost price and selling price: ");<br>
+    scanf("%f %f", &costPrice, &sellingPrice);<br>
+
+    if (costPrice < sellingPrice) {<br>
+        printf("It is a profit.\n");<br>
+    } else if (costPrice > sellingPrice) {<br>
+        printf("It is a loss.\n");<br>
+    } else {
+        printf("There is no profit or loss.\n");<br>
+    }
+
+    return 0;<br>
+}
+
+6. Program to Calculate Simple Interest<br>
+
+#include stdio.h<br>
+
+int main() {<br>
+    float principal, rate, time, simpleInterest;<br>
+    printf("Enter principal amount, rate of interest, and time period: ");<br>
+    scanf("%f %f %f", &principal, &rate, &time);<br>
+
+    simpleInterest = (principal * rate * time) / 100;<br>
+    printf("Simple Interest: %.2f\n", simpleInterest);<br>
+
+    return 0;<br>
+}<br>
+
+
