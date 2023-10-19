@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <img src="Mathur.png" alt="">
+          <div class="nav-title">
+            CodeGym: Your Daily Workout
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://codebasics.io/portfolio/Nikhil-Mathur">About</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+<br><br>    
+    <div id="content-container" class="contn">
+        <div id="why-practice-coding">
+            <h2>Why Practice Coding and Its Creativity</h2>
+            <p>
+                Coding is not just about writing lines of code; it's a creative process that allows you to build
+                innovative solutions, solve real-world problems, and express your ideas. Daily coding practice helps
+                you refine your problem-solving skills, enhances your logical thinking, and boosts your creativity.
+                It's an essential skill for the digital age.
+            </p>
+        </div>
+
+        <div id="easy-level-questions">
+            <h2>Easy Level Questions</h2>
+            <div id="Set1">
+                <h3>Set 1</h3>
+                <div id="questions-description">
+                    <p>These questions are designed to be diverse in both their level of complexity and their nature. They include tasks like finding the oldest age among a set of inputs, converting temperature values from Celsius to Fahrenheit, and swapping numbers, which are suitable for beginners and those looking to strengthen their foundational programming skills.the questions presented offer a well-rounded experience, making them accessible to individuals at various stages of their coding journey and encouraging a mix of logical reasoning, mathematical understanding, and algorithmic thinking.</p>
+                </div>
+                <button id="show-questions-button">Show Questions</button>
+                <!-- You can add the loading animation here -->
+                <div id="questions-container">
+                    <div id="questions">
+                        <button id="close-questions-button">✕</button>
+                        <h4>Programming Questions</h4>
+                        <ul>
+                            <li>User will input (3 ages). Find the oldest one</li>
+                            <li>Write a program that will convert Celsius value to Fahrenheit</li>
+                            <li>User will input (2 numbers). Write a program to swap the numbers</li>
+                            <li>Write a program that will give you the sum of 3 digits</li>
+                            <li>Write a program that will reverse a four-digit number. Also, it checks whether the reverse is true.</li>
+                        </ul>
+                        <button id="show-c-solution-button" class="cmnbtn">C Language</button>
+                        <button id="show-java-solution-button" class="cmnbtn">Java Language</button>
+                        <button id="show-python-solution-button" class="cmnbtn">Python Language</button>
+
+                    </div>
+                </div>
+            </div>  
+                
+            </div>
+        
+         <br>
+        
+         <div id="Set2">
+            <h3>Set2</h3>
+            <div id="questions-description">
+                <p> These questions cover a range of difficulty levels, from easy (questions 1, 2, 5, and 6) to moderate (questions 3, 4, and 7). They include a mix of basic programming logic, mathematical calculations, and geometric problem-solving. They are suitable for individuals looking to strengthen their foundational programming and mathematical skills..</p>
+               </div>
+                <button id="show-questions-button2">Show Questions</button>
+                <div id="questions-container2">
+                <div id="questions2">
+                    <button id="close-questions-button2">✕</button>
+                    <h4>Programming Questions</h4>
+                    <ol>
+                       <li> Write a program that will tell whether the number entered by the user is odd or even.
+                    <li>Write a program that will tell whether the given year is a leap year or not.</li>
+                    <li>Write a program to find the euclidean distance between two coordinates.</li>
+                    <li>Write a program that take a user inputr of three angles and will find out whether it can form a triangle or not.</li>
+                    <li>Write a program that will take user input of cost price and selling price and determines whether its a loss or a profit</li>
+                    <li>Write a program to find the simple interest when the value of principle,rate of interest and time period is given.</li>
+                    <li>Write a program to find the volume of the cylinder. Also find the cost when ,when the cost of 1litre milk is 40Rs.</li>
+                    
+                       
+                    </ol> <br>
+                    <button id="show-c-solution-button-set2" class="cmnbtn">C Language</button>
+                    <button id="show-java-solution-button-set2" class="cmnbtn">Java Language</button>
+                    <button id="show-python-solution-button-set2" class="cmnbtn">Python Language</button>
+                </div>
+            </div>
+            
+        </div>
+    </div> 
+
+    <br>
+ <br>
+
+
+</div>
+<div id="c-modal" class="modal">
+    <div class="modal-content">
+        <button id="closecButton">✕</button>
+        <h4>C Language Solutions</h4> <br><br>
+        <p>1. Finding the Oldest Age among Three:<br>
+             #include stdio.h
+<br>
+            int main() {
+                int age1, age2, age3;<br>
+                
+                printf("Enter three ages: ");<br>
+                scanf("%d %d %d", &age1, &age2, &age3);<br>
+            
+                int oldest = age1;<br>
+                if (age2 > oldest) {
+                    oldest = age2;<br>
+                }
+                if (age3 > oldest) {
+                    oldest = age3;<br>
+                }<br>
+            
+                printf("The oldest age is: %d\n", oldest);<br>
+            
+                return 0;<br>
+            }<br>
+            </p> <br>
+        <p>2. Celsius to Fahrenheit Conversion: <br>
+            #include stdio.h<br>
+
+                int main() {
+                    float celsius, fahrenheit;<br>
+                
+                    printf("Enter temperature in Celsius: ");<br>
+                    scanf("%f", &celsius);<br>
+                
+                    fahrenheit = (celsius * 9/5) + 32;<br>
+                
+                    printf("Temperature in Fahrenheit: %.2f\n", fahrenheit);<br>
+                
+                    return 0;
+                }<br>
+                
+        </p> <br>
+        <p>3. Swapping Two Numbers: 
+            #include stdio.h<br>
+
+                int main()<br> {
+                    int num1, num2, temp;<br>
+                
+                    printf("Enter two numbers: ");
+                    scanf("%d %d", &num1, &num2);<br>
+                
+                    temp = num1;<br>
+                    num1 = num2;<br>
+                    num2 = temp;<br>
+                
+                    printf("Swapped numbers: %d %d\n", num1, num2);<br>
+                
+                    return 0;<br>
+                }<br>
+                
+        </p><br>
+        <p>4. Sum of Three Digits:<br>
+            #include stdio.h<br>
+
+                int main() {<br>
+                    int num, sum = 0;<br>
+                
+                    printf("Enter a 3-digit number: ");<br>
+                    scanf("%d", &num);<br>
+                
+                    while (num != 0) {<br>
+                        sum += num % 10;<br>
+                        num /= 10;<br>
+                    }<br>
+                
+                    printf("Sum of the digits: %d\n", sum);<br>
+                
+                    return 0;<br>
+                }
+                 </p><br>
+        <p>5. Reversing a Four-Digit Number: <br>
+            #include <stdio.h><br>
+
+                int main() {<br>
+                    int num, reversed = 0, original, remainder;<br>
+                
+                    printf("Enter a 4-digit number: ");<br>
+                    scanf("%d", &num);<br>
+                    original = num;<br>
+                
+                    while (num != 0) {<br>
+                        remainder = num % 10;<br>
+                        reversed = reversed * 10 + remainder;<br>
+                        num /= 10;<br>
+                    }
+                <br>
+                    printf("Reversed number: %d\n", reversed);<br>
+                
+                    if (original == reversed) {<br>
+                        printf("The reverse is the same as the original.\n");<br>
+                    } else {
+                        printf("The reverse is not the same as the original.\n");<br>
+                    }
+                <br>
+                    return 0;<br>
+                }<br>
+                
+        </p><br>
+    </div>
+</div>
+
+<div id="java-modal" class="modal">
+    <div class="modal-content">
+        <button id="closejavaButton">✕</button>
+        <h4>Java Language Solutions</h4> <br>
+        <p>1. Finding the Oldest Age among Three: <br>
+            import java.util.Scanner;<br>
+
+            public class Main {<br>
+                public static void main(String[] args) {<br>
+                    Scanner scanner = new Scanner(System.in);<br>
+                    System.out.println("Enter three ages: ");<br>
+                    int age1 = scanner.nextInt();<br>
+                    int age2 = scanner.nextInt();<br>
+                    int age3 = scanner.nextInt();<br>
+            
+                    int oldest = Math.max(age1, Math.max(age2, age3));<br>
+                    System.out.println("The oldest age is: " + oldest);<br>
+                }<br>
+            }<br>
+             </p>
+        <p>2. Celsius to Fahrenheit Conversion: <br>
+
+            import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Scanner scanner = new Scanner(System.in);<br>
+        System.out.println("Enter temperature in Celsius: ");<br>
+        float celsius = scanner.nextFloat();<br>
+
+        float fahrenheit = (celsius * 9/5) + 32;<br>
+        System.out.println("Temperature in Fahrenheit: " + fahrenheit);<br>
+    }<br>
+}<br>
+<br>
+         </p>
+        <p>3. Swapping Two Numbers: <br>
+            import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Scanner scanner = new Scanner(System.in);<br>
+        System.out.println("Enter two numbers: ");<br>
+        int num1 = scanner.nextInt();<br>
+        int num2 = scanner.nextInt();<br>
+
+        int temp = num1;<br>
+        num1 = num2;<br>
+        num2 = temp;<br>
+
+        System.out.println("Swapped numbers: " + num1 + " " + num2);<br>
+    }<br>
+}<br>
+<br>
+        
+        </p> 
+        <p>4. Sum of Three Digits: <br>
+            import java.util.Scanner<br>
+       public class Main {<br>
+       public static void main(String[] args) {<br>
+        Scanner scanner = new Scanner(System.in);<br>
+        System.out.println("Enter a 3-digit number: ");<br>
+        int num = scanner.nextInt();<br>
+
+        int sum = 0;<br>
+        while (num != 0) {<br>
+            sum += num % 10;<br>
+            num /= 10;<br>
+        }<br>
+
+        System.out.println("Sum of the digits: " + sum);<br>
+    }<br>
+}<br>
+
+        </p>
+        <p>5. Reversing a Four-Digit Number: <br>
+            import java.util.Scanner;<br>
+
+    public class Main {<br>
+    public static void main(String[] args) {<br>
+        Scanner scanner = new Scanner(System.in);<br>
+        System.out.println("Enter a 4-digit number: ");<br>
+        int num = scanner.nextInt();
+        int original = num;<br>
+
+        int reversed = 0;<br>
+        while (num != 0) {<br>
+            int remainder = num % 10;<br>
+            reversed = reversed * 10 + remainder;<br>
+            num /= 10;<br>
+        }<br>
+
+        System.out.println("Reversed number: " + reversed);<br>
+
+        if (original == reversed) {<br>
+            System.out.println("The reverse is the same as the original.");<br>
+        } else {<br>
+            System.out.println("The reverse is not the same as the original.");<br>
+        }<br>
+    }<br>
+}<br> </p></div>
+</div>
+
+  <!-- Python Language Solutions Pop-up -->
+  <div id="python-modal" class="modal">
+    <div class="modal-content">
+        <button id="closepythonButton">✕</button>
+        <h4>Python Language Solutions</h4>
+        <p>1. Finding the Oldest Age among Three: <br>
+            age1, age2, age3 = map(int, input("Enter three ages: ").split())<br>
+            oldest = max(age1, age2, age3)<br>
+            print("The oldest age is:", oldest)<br>
+
+
+        
+        
+        </p>
+        <p>2. Celsius to Fahrenheit Conversion: <br>
+            celsius = float(input("Enter temperature in Celsius: "))<br>
+            fahrenheit = (celsius * 9/5) + 32<br>
+            print("Temperature in Fahrenheit:", fahrenheit)<br>
+
+        
+        
+        </p>
+        <p>3. Swapping Two Numbers: <br>
+            num1, num2 = map(int, input("Enter two numbers: ").split())<br>
+            num1, num2 = num2, num1<br>
+            print("Swapped numbers:", num1, num2)<br>
+
+        
+        
+        </p>
+        <p>4. Sum of Three Digits: <br>
+            num = int(input("Enter a 3-digit number: "))<br>
+            sum_of_digits = sum(map(int, str(num)))<br>
+            print("Sum of the digits:", sum_of_digits)<br>
+
+        
+        
+        </p>
+        <p>5. Reversing a Four-Digit Number: <br>
+            num = int(input("Enter a 4-digit number: "))<br>
+            original = num<br>
+            reversed = int(str(num)[::-1])<br>
+            print("Reversed number:", reversed)<br>
+            if original == reversed:<br>
+             print("The reverse is the same as the original.")<br>
+            else:<br>
+                print("The reverse is not the same as the original.")<br>
+
+        
+        
+        </p>
+    </div>
+</div>
+
+<div id="C-modal-set2" class="modal">
+
+    <div class="modal-content">
+        <!-- Content will be loaded dynamically -->
+    </div>
+</div>
+ <!-- Java Language Solutions Pop-up for Set 2 -->
+ <div id="java-modal-set2" class="modal">
+    <div class="modal-content">
+        <!-- Content will be loaded dynamically -->
+    </div>
+</div> <br>
+<center><button id="show-iframe-button" class="cmnbtn">Open compliler</button></center>
+
+<div id="iframe-container" style="display: none;">
+  <button id="close-iframe-button" class="cmnbtn">Close</button> <!-- Add Close button -->
+  <iframe
+    id="embedded-iframe"
+    src="https://www.onlinegdb.com/online_c_compiler"
+    width="100%"
+    height="356"
+    frameborder="0"
+    marginwidth="0"
+    marginheight="0"
+    allowfullscreen
+  ></iframe>
+</div> <br>
+    <div id="footer">
+        <img src="Mathur.png" alt="" id="meimg">
+        <img src="IMG_0518.jpg" alt="" id="meimg2">
+
+        <p>Made By: NIKHIL MATHUR</p>
+        <p class="moving-text">New set uploaded every 2 days</p>
+        <a href="mailto:mathurji15@gmail.com"><img src="https://static.vecteezy.com/system/resources/previews/000/420/500/original/vector-email-icon.jpg" alt="Email" ></a>
+        <a href="https://www.linkedin.com/in/nikhil-mathur-4600661a8/"><img src="https://th.bing.com/th/id/OIP.VJhVCn_KEP55vMgXH9jepwHaHY?pid=ImgDet&rs=1" alt="linkedin"></a>
+        <a href="https://github.com/Mathurshab2210"><img src="https://th.bing.com/th/id/OIP.BQgDHy0rv1rFTW0YWeEtQAAAAA?pid=ImgDet&rs=1" alt="Github"></a>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
