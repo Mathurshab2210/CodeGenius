@@ -1,0 +1,102 @@
+<h1 style="text-align: center;">Python Solutions</h1>
+
+<!-- Program to Add the Square of Each Digit -->
+<h2 style="text-align: left;">Program to Add the Square of Each Digit</h2>
+<pre>
+<code>
+num = int(input("Enter a three-digit number: "))
+digit1 = num % 10
+num = num // 10
+digit2 = num % 10
+num = num // 10
+digit3 = num
+sum_of_squares = digit1 ** 2 + digit2 ** 2 + digit3 ** 2
+print("The sum of squares of the digits is:", sum_of_squares)
+</code>
+</pre>
+
+<!-- Program to Check if a Number is an Armstrong Number -->
+<h2 style="text-align: left;">Program to Check if a Number is an Armstrong Number</h2>
+<pre>
+<code>
+num = int(input("Enter an integer: "))
+original_num = num
+n = len(str(num))
+result = 0
+while num > 0:
+    remainder = num % 10
+    result += remainder ** n
+    num //= 10
+if result == original_num:
+    print(original_num, "is an Armstrong number.")
+else:
+    print(original_num, "is not an Armstrong number.")
+</code>
+</pre>
+
+<!-- Program to Check if a Number is a Narcissistic Number -->
+<h2 style="text-align: left;">Program to Check if a Number is a Narcissistic Number</h2>
+<pre>
+<code>
+num = int(input("Enter a four-digit number: "))
+original_num = num
+n = len(str(num))
+result = 0
+while num > 0:
+    remainder = num % 10
+    result += remainder ** n
+    num //= 10
+if result == original_num:
+    print(original_num, "is a narcissistic number.")
+else:
+    print(original_num, "is not a narcissistic number.")
+</code>
+</pre>
+
+<!-- Program to Calculate In-Hand Salary -->
+<h2 style="text-align: left;">Program to Calculate In-Hand Salary</h2>
+<pre>
+<code>
+salary = float(input("Enter your salary: "))
+hra = 0.10 * salary  <!-- HRA is 10% of the salary -->
+da = 0.05 * salary  <!-- DA is 5% of the salary -->
+pf = 0.03 * salary  <!-- PF is 3% of the salary -->
+if 500000 <= salary <= 1000000:
+    tax = 0.10 * salary
+elif 1000000 < salary <= 2000000:
+    tax = 0.20 * salary
+elif salary > 2000000:
+    tax = 0.30 * salary
+else:
+    tax = 0
+in_hand_salary = salary + hra + da - pf - tax
+print("Your in-hand salary is:", in_hand_salary)
+</code>
+</pre>
+
+<!-- Menu-Driven Program for Unit Conversions -->
+<h2 style="text-align: left;">Menu-Driven Program for Unit Conversions</h2>
+<pre>
+<code>
+while True:
+    print("Menu:")
+    print("1. Convert centimeters to feet")
+    print("2. Convert kilometers to miles")
+    print("3. Convert USD to INR")
+    print("4. Exit")
+    choice = int(input("Enter your choice: "))
+    if choice == 4:
+        print("Exiting the program.")
+        break
+    if choice < 1 or choice > 3:
+        print("Invalid choice. Please select a valid option.")
+        continue
+    value = float(input("Enter the value for conversion: "))
+    if choice == 1:
+        print(f"{value:.2f} centimeters is {value / 30.48:.2f} feet.")
+    elif choice == 2:
+        print(f"{value:.2f} kilometers is {value / 1.609:.2f} miles.")
+    elif choice == 3:
+        print(f"{value:.2f} USD is {value * 74.29:.2f} INR")  <!-- Exchange rate as of writing -->
+</code>
+</pre>

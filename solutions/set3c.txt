@@ -1,0 +1,183 @@
+
+<h1>C Language Solutions</h1>
+
+<!-- Program to Add the Square of Each Digit -->
+<h2>Program to Add the Square of Each Digit</h2>
+<pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num, digit1, digit2, digit3, sum_of_squares;
+
+    printf("Enter a three-digit number: ");
+    scanf("%d", &num);
+
+    digit1 = num % 10;
+    num = num / 10;
+    digit2 = num % 10;
+    num = num / 10;
+    digit3 = num;
+
+    sum_of squares = digit1 * digit1 + digit2 * digit2 + digit3 * digit3;
+
+    printf("The sum of squares of the digits is: %d\n", sum_of_squares);
+
+    return 0;
+}
+</pre>
+
+<!-- Program to Check if a Number is an Armstrong Number -->
+<h2>Program to Check if a Number is an Armstrong Number</h2>
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+int main() {
+    int num, originalNum, remainder, n = 0;
+    double result = 0.0;
+
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    originalNum = num;
+
+    while (originalNum != 0) {
+        originalNum /= 10;
+        ++n;
+    }
+
+    originalNum = num;
+
+    while (originalNum != 0) {
+        remainder = originalNum % 10;
+        result += pow(remainder, n);
+        originalNum /= 10;
+    }
+
+    if ((int)result == num)
+        printf("%d is an Armstrong number.\n", num);
+    else
+        printf("%d is not an Armstrong number.\n", num);
+
+    return 0;
+}
+</pre>
+
+<!-- Program to Check if a Number is a Narcissistic Number -->
+<h2>Program to Check if a Number is a Narcissistic Number</h2>
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+int main() {
+    int num, originalNum, remainder, n = 0;
+    double result = 0.0;
+
+    printf("Enter a four-digit number: ");
+    scanf("%d", &num);
+
+    originalNum = num;
+
+    while (originalNum != 0) {
+        originalNum /= 10;
+        ++n;
+    }
+
+    originalNum = num;
+
+    while (originalNum != 0) {
+        remainder = originalNum % 10;
+        result += pow(remainder, n);
+        originalNum /= 10;
+    }
+
+    if ((int)result == num)
+        printf("%d is a narcissistic number.\n", num);
+    else
+        printf("%d is not a narcissistic number.\n", num);
+
+    return 0;
+}
+</pre>
+
+<!-- Program to Calculate In-Hand Salary -->
+<h2>Program to Calculate In-Hand Salary</h2>
+<pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    float salary, hra, da, pf, tax, inHandSalary;
+
+    printf("Enter your salary: ");
+    scanf("%f", &salary);
+
+    hra = 0.10 * salary; // HRA is 10% of the salary
+    da = 0.05 * salary; // DA is 5% of the salary
+    pf = 0.03 * salary; // PF is 3% of the salary
+
+    if (salary >= 500000 && salary <= 1000000)
+        tax = 0.10 * salary;
+    else if (salary > 1000000 && salary <= 2000000)
+        tax = 0.20 * salary;
+    else if (salary > 2000000)
+        tax = 0.30 * salary;
+    else
+        tax = 0.0;
+
+    inHandSalary = salary + hra + da - pf - tax;
+
+    printf("Your in-hand salary is: %.2f\n", inHandSalary);
+
+    return 0;
+}
+</pre>
+
+<!-- Menu-Driven Program for Unit Conversions -->
+<h2>Menu-Driven Program for Unit Conversions</h2>
+<pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int choice;
+    double value;
+
+    while (1) {
+        printf("Menu:\n");
+        printf("1. Convert centimeters to feet\n");
+        printf("2. Convert kilometers to miles\n");
+        printf("3. Convert USD to INR\n");
+        printf("4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        if (choice == 4) {
+            printf("Exiting the program.\n");
+            break;
+        }
+
+        if (choice < 1 || choice > 3) {
+            printf("Invalid choice. Please select a valid option.\n");
+            continue;
+        }
+
+        printf("Enter the value for conversion: ");
+        scanf("%lf", &value);
+
+        switch (choice) {
+            case 1:
+                printf("%.2lf centimeters is %.2lf feet.\n", value, value / 30.48);
+                break;
+            case 2:
+                printf("%.2lf kilometers is %.2lf miles.\n", value, value / 1.609);
+                break;
+            case 3:
+                printf("%.2lf USD is %.2lf INR.\n", value, value * 74.29); // Exchange rate as of writing
+                break;
+        }
+    }
+
+    return 0;
+}
+</pre>
+
+
