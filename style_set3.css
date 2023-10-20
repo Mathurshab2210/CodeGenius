@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, hsl(185, 26%, 72%), hsl(224, 66%, 82%));
+}
+
+h1 {
+    text-align: center;
+}
+.animate-heading{
+    animation: bounce 1s ease-in infinite;
+
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+.buttons {
+    text-align: center;
+}
+
+.language-button ,#backButton {
+    background-color: #2b61cd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.language-button:active {
+    background-color: #1e4a9b; /* Darker color when button is clicked */
+    transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+#backButton:active {
+    background-color: #1e4a9b; /* Darker color when button is clicked */
+    transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+.container {
+    text-align: center;
+    /* border: 2px solid #ccc; */
+    padding: 20px;
+    border-radius: 25px;
+    margin:0 auto;
+    width:90%;
+    background-color: #a7b9e8;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.container pre{
+    font-size: 20px;
+    text-align: left;
+    padding: 3%;
+}
+
+@media (max-width: 768px) {
+    * {
+        overflow-x: hidden;
+    }
+    .language-button {
+        display: block;
+        width: 80%;
+        margin: 4%;
+    }
+    .container {
+        font-size: 7px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+    .container pre {
+        font-size: 1.05em;
+        overflow-wrap: break-word; /* Use overflow-wrap instead */
+    }
+  
+}
+
