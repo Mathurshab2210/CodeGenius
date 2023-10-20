@@ -136,33 +136,14 @@ body {
     border-bottom: dotted 3px dodgerblue;
     width:70px
 }
-#Set2{
-    font-size: 24px;
-    margin-bottom: 10px;
-    background-color: #f0f5f9;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-#Set2>h3{
-    border-bottom: dotted 3px dodgerblue;
-    width:70px
-}
 #questions-description {
+    margin-top: 20px;
+}
+#questions-description3 {
     margin-top: 20px;
 }
 
 #questions-description p {
-    word-wrap: break-word;
-    max-width: 100%;
-    padding: 2%;
-   
-}
-#questions-description2 {
-    margin-top: 20px;
-}
-
-#questions-description2 p {
     word-wrap: break-word;
     max-width: 100%;
     padding: 2%;
@@ -176,15 +157,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-#show-questions-button2 {
-    background-color: #5a92e1;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
- #questions-container {
+#questions-container {
     display: none;
     margin-top: 20px;
 }
@@ -207,6 +180,47 @@ body {
     border-radius: 5px;
     cursor: pointer;
     float: right;
+}
+#closecButton, #closejavaButton, #closepythonButton{
+    background-color: #d43f00;
+    color: white;
+    padding: 3px 7px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+
+}
+#Set2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #f0f5f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#Set2>h3{
+    border-bottom: dotted 3px dodgerblue;
+    width:70px
+}
+#questions-description2 {
+    margin-top: 20px;
+}
+
+#questions-description2 p {
+    word-wrap: break-word;
+    max-width: 100%;
+    padding: 2%;
+   
+}
+
+#show-questions-button2 {
+    background-color: #5a92e1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 #questions-container2 {
     display: none;
@@ -232,16 +246,8 @@ body {
     cursor: pointer;
     float: right;
 }
-#closecButton, #closejavaButton, #closepythonButton{
-    background-color: #d43f00;
-    color: white;
-    padding: 3px 7px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    float: right;
 
-}
+
 .close-button {
     position: absolute;
     top: 10px;
@@ -286,6 +292,68 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+#Set3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #f0f5f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#Set3>h3{
+    border-bottom: dotted 3px dodgerblue;
+    width:70px
+}
+#questions-description3 {
+    margin-top: 20px;
+}
+
+#questions-description3 p {
+    word-wrap: break-word;
+    max-width: 100%;
+    padding: 2%;
+   
+}
+#show-questions-button3 {
+    background-color: #5a92e1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#questions-container3 {
+    display: none;
+    margin-top: 20px;
+}
+
+#questions3 {
+    background-color: #f0f5f9;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 75%;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#close-questions-button3 {
+    background-color: #d43f00;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+.outer-list {
+    list-style-type: decimal;
+  }
+  
+  .inner-list {
+    list-style-type: lower-roman;
+  }
+  
 #footer {
     background-color: #5a92e1;
     color: white;
