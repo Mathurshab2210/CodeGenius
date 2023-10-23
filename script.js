@@ -158,3 +158,36 @@ showPythonSolutionButtonSet2.addEventListener("click", () => loadAndDisplaySolut
     var iframeContainer = document.getElementById('iframe-container');
     iframeContainer.style.display = 'none';
   });
+// Get references to the buttons
+const pythonButton = document.getElementById('python-button');
+const javaButton = document.getElementById('java-button');
+const cButton = document.getElementById('c-button');
+
+// Add event listeners to the buttons
+pythonButton.addEventListener('click', () => {
+    window.location.href = 'Language/py.html'; // Replace with the actual URL for the Python page
+});
+
+javaButton.addEventListener('click', () => {
+    window.location.href = 'java.html'; // Replace with the actual URL for the Java page
+});
+
+cButton.addEventListener('click', () => {
+    window.location.href = 'c.html'; // Replace with the actual URL for the C page
+});
+// Function to toggle the message box
+function toggleMessage() {
+    var messageBox = document.getElementById("message-box");
+    var updatesButton = document.getElementById("updates-button");
+
+    if (messageBox.style.display === "block") {
+        messageBox.style.display = "none";
+        updatesButton.textContent = "Updates";
+    } else {
+        messageBox.style.display = "block";
+        updatesButton.textContent = "Close";
+    }
+}
+
+// Attach an event listener to the "Updates" button
+document.getElementById("updates-button").addEventListener("click", toggleMessage);
