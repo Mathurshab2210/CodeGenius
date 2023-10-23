@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="css/py.css">
+</head>
+<body>
+    <header>
+        <img src="../Mathur.png" alt="" id="hdrimg">
+        <h1>Explore Python</h1>
+        <nav>
+            <a href="py.html"><button id="back-button2">Back</button></a> 
+            <select id="language-dropdown">
+                <option value="">Languages</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="c">C</option>
+                <!-- Add options for other programming languages -->
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Content">
+            <div id="cnt2-content">
+                <!-- Content about the definition of Python will be loaded here -->
+            </div>
+        </section>
+        <button id="show-quiz-button">Show Quiz</button>
+    
+        <div id="quiz-container" style="display: none;">
+            <h2>Python Basics Quiz</h2>
+            <form id="quiz-form">
+                <ol>
+                    <li>What function is used to receive user input in Python?<br>
+                        <input type="radio" name="q1" value="a"> input()<br>
+                        <input type="radio" name="q1" value="b"> output()<br>
+                        <input type="radio" name="q1" value="c"> receive_input()</li>
+                    
+                    <li>How do you display text in Python?<br>
+                        <input type="radio" name="q2" value="a"> print_text()<br>
+                        <input type="radio" name="q2" value="b"> display()<br>
+                        <input type="radio" name="q2" value="c"> print()</li>
+                    
+                    <li>What is the result of "Hello" + "World" in Python?<br>
+                        <input type="radio" name="q3" value="a"> HelloWorld<br>
+                        <input type="radio" name="q3" value="b"> Hello World<br>
+                        <input type="radio" name="q3" value="c"> Error</li>
+                </ol>
+                
+                <input type="submit" value="Submit Quiz">
+            </form>
+            
+            <div id="results"></div>
+            <button id="collapse-quiz-button" style="display: none;">Collapse Quiz</button>
+        </div>
+        </div>
+<br><br> 
+<section>
+    <div id="cnt3-content">
+        <!-- Content about the definition of Python will be loaded here -->
+    </div>
+</section>
+    <br>
+    <button id="show-quiz-button2">Start Quiz</button> 
+
+    <div id="quiz-container2" style="display: none;">
+        <h2>Quiz Questions</h2>
+        <form id="quiz-form2">
+            <ol>
+                <li>What Python statement is used to execute a block of code only if a certain condition is true?</li>
+                <input type="radio" name="q1" value="a"> if statement<br>
+                <input type="radio" name="q1" value="b"> while statement<br>
+                <input type="radio" name="q1" value="c"> for statement<br>
+                <br>
+
+                <li>What Python statement is used to check multiple conditions after the initial if condition?</li>
+                <input type="radio" name="q2" value="a"> while statement<br>
+                <input type="radio" name="q2" value="b"> for statement<br>
+                <input type="radio" name="q2" value="c"> elif statement<br>
+                <br>
+
+                <li>Which statement is used to exit a loop prematurely when a certain condition is met?</li>
+                <input type="radio" name="q3" value="a"> pass<br>
+                <input type="radio" name="q3" value="b"> continue<br>
+                <input type="radio" name="q3" value="c"> break<br>
+                <br>
+
+                <li>What is the purpose of the "elif" statement in Python?</li>
+                <input type="radio" name="q4" value="a"> To define a function<br>
+                <input type="radio" name="q4" value="b"> To check multiple conditions after the initial if condition<br>
+                <input type="radio" name="q4" value="c"> To repeat a block of code<br>
+                <br>
+
+                <li>Which loop is used to execute a block of code as long as a specified condition is true?</li>
+                <input type="radio" name="q5" value="a"> if loop<br>
+                <input type="radio" name="q5" value="b"> for loop<br>
+                <input type="radio" name="q5" value="c"> while loop<br>
+                <br>
+
+                <li>What statement is used to skip the current iteration of a loop and move to the next one, based on a certain condition?</li>
+                <input type="radio" name="q6" value="a"> pass<br>
+                <input type="radio" name="q6" value="b"> continue<br>
+                <input type="radio" name="q6" value="c"> break<br>
+                <br>
+
+                <li>Which statement is used to provide an alternative code block to execute when the initial if condition is false?</li>
+                <input type="radio" name="q7" value="a"> else statement<br>
+                <input type="radio" name="q7" value="b"> switch statement<br>
+                <input type="radio" name="q7" value="c"> elseif statement<br>
+            </ol>
+
+            <input type="submit" value="Submit Quiz">
+        </form>
+
+        <div id="results2"></div>
+        <button id="collapse-quiz-button2" style="display: none;">Collapse Quiz</button>
+    </div>
+<br>
+        <footer>
+            <div id="page-number">Page 2</div>
+            <a href="py.html">Prev Page</a> &nbsp
+            <a href="../index.html">Practice</a>
+        </footer>
+    </body>
+    <script src="js/script.js"></script>
+    </html>
