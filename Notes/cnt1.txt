@@ -1,0 +1,67 @@
+<h2>Data Types in Python</h2>
+    <p>Data types in Python specify what kind of values a variable can hold. Some common data types include:</p>
+    <ul>
+        <li><strong>Integer (int):</strong> Whole numbers, e.g., 5, -12.</li>
+        <li><strong>Float (float):</strong> Numbers with decimal points, e.g., 3.14, -0.5.</li>
+        <li><strong>String (str):</strong> Text, e.g., "Hello, World!", 'Python'.</li>
+        <li><strong>Boolean (bool):</strong> Represents true or false values, e.g., True, False.</li>
+        <li><strong>List:</strong> Ordered collection of values, e.g., [1, 2, 3].</li>
+        <li><strong>Tuple:</strong> Ordered, immutable collection of values, e.g., (1, 2, 3).</li>
+        <li><strong>Dictionary:</strong> Key-value pairs, e.g., {'name': 'Alice', 'age': 30}.</li>
+    </ul> <br><br>
+
+ <h2>Variables and Identifiers</h2>
+    <p><strong>Variables</strong> in Python are used to store and manage data. An <strong>identifier</strong> is the name given to a variable or other Python entities. Identifiers follow these rules:</p>
+    <ul>
+        <li><strong>Must start with a letter (a-z, A-Z) or underscore (_).</strong></li>
+        <li><strong>Can contain letters, numbers, and underscores.</strong></li>
+        <li><strong>Are case-sensitive (e.g., 'myVar' and 'myvar' are different).</strong></li>
+        <li><strong>Cannot be a reserved word (e.g., 'if', 'while', 'for').</strong></li>
+        <li><strong>Should have a meaningful name that reflects their purpose.</strong></li>
+    </ul>
+    <p><strong>Example:</strong> A variable with the identifier 'name' can store a person's name like 'Alice'.</p>
+
+    <h2>Functions and Methods</h2>
+    <p><strong>Functions</strong> and <strong>methods</strong> are blocks of code that perform specific tasks. They are similar but have differences:</p>
+    <ul>
+        <li><strong>Functions:</strong> Functions are standalone blocks of code that can take input, perform operations, and return output. They can be defined using the 'def' keyword.</li>
+        <li><strong>Methods:</strong> Methods are functions that are associated with an object, such as an instance of a class. They operate on the object's data and can be invoked using dot notation.</li>
+    </ul>
+    <p><strong>Example of a Function:</strong> A function 'add' can take two numbers as input and return their sum, e.g., add(2, 3) returns 5.</p>
+    <p><strong>Example of a Method:</strong> A method 'upper' can be applied to a string to convert it to uppercase, e.g., 'hello'.upper() returns 'HELLO'.</p>
+<br> <br>
+
+<h2>Differences Between Functions and Methods</h2>
+    
+    <h3>Functions:</h3>
+    <ol>
+        <li><strong>Stand-Alone:</strong> Functions are stand-alone blocks of code.</li>
+        <li><strong>Defined with 'def':</strong> Functions are defined using the 'def' keyword.</li>
+        <li><strong>Can Be Called Independently:</strong> Functions can be called independently without any specific object.</li>
+        <li><strong>No Implicit Object:</strong> Functions do not have an implicit object they operate on.</li>
+        <li><strong>Arguments Passed Explicitly:</strong> Arguments must be passed explicitly in function calls.</li>
+        <li><strong>Global or Local Scope:</strong> Functions can have access to global and local variables.</li>
+    </ol>
+    <p><strong>Examples:</strong></p>
+    <code>
+        def add(x, y):<br>
+        &nbsp;&nbsp;return x + y<br>
+        result = add(2, 3)  # Calling the function
+    </code>
+    
+    <h3>Methods:</h3>
+    <ol>
+        <li><strong>Associated with Objects:</strong> Methods are functions associated with objects, typically instances of classes.</li>
+        <li><strong>Called on Objects:</strong> Methods are called on objects using dot notation.</li>
+        <li><strong>Implicit Object:</strong> Methods have an implicit object they operate on.</li>
+        <li><strong>Access Object Attributes:</strong> Methods can access and modify the attributes of the object they belong to.</li>
+    </ol>
+    <p><strong>Examples:</strong></p>
+    <code>
+        text = "hello"<br>
+        upper_text = text.upper()  # Calling the method on the 'text' object
+    </code>
+    <code>
+        numbers = [1, 2, 3]<br>
+        numbers.append(4)  # Calling the method on the 'numbers' list
+    </code>

@@ -1,0 +1,113 @@
+
+    <h1>Control Structures in Python</h1>
+    <br>
+    <h2>1. Conditional Statements (if, elif, else)</h2>
+    <p>Conditional statements allow you to make decisions in your code based on certain conditions.</p>
+    <p><strong>if Statement:</strong></p>
+    <p>The <code>if</code> statement is used to execute a block of code only if a certain condition is true.</p>
+    <pre>
+        <code>
+if condition:
+    # Code to execute if the condition is True
+        </code>
+    </pre>
+    
+    <p><strong>elif Statement:</strong></p>
+    <p>The <code>elif</code> statement is used to check multiple conditions after the initial <code>if</code> condition.</p>
+    <pre>
+        <code>
+if condition1:
+    # Code to execute if condition1 is True
+elif condition2:
+    # Code to execute if condition2 is True
+        </code>
+    </pre>
+    
+    <p><strong>else Statement:</strong></p>
+    <p>The <code>else</code> statement is used to provide an alternative code block to execute when the initial condition (and any <code>elif</code> conditions) is false.</p>
+    <pre>
+        <code>
+if condition:
+    # Code to execute if the condition is True
+else:
+    # Code to execute if the condition is False
+        </code>
+    </pre>
+    
+    <h2>2. Loops (for and while)</h2>
+    <p>Loops allow you to repeat a block of code multiple times.</p>
+    <p><strong>For Loop:</strong></p>
+    <p>The <code>for</code> loop is used to iterate over a sequence (such as a list, tuple, or string) and execute a block of code for each item in the sequence.</p>
+    <pre>
+        <code>
+for item in iterable:
+    # Code to execute for each item in the iterable
+        </code>
+    </pre>
+    
+    <p><strong>While Loop:</strong></p>
+    <p>The <code>while</code> loop is used to repeatedly execute a block of code as long as a specified condition is true.</p>
+    <pre>
+        <code>
+while condition:
+    # Code to execute while the condition is True
+        </code>
+    </pre>
+    
+    <h2>3. Break and Continue</h2>
+    <p><strong>Break:</strong> The <code>break</code> statement is used to exit a loop prematurely when a certain condition is met. It is often used to avoid infinite loops.</p>
+    <pre>
+        <code>
+for item in iterable:
+    if condition:
+        break
+    # Code
+        </code>
+    </pre>
+    
+    <p><strong>Continue:</strong> The <code>continue</code> statement is used to skip the current iteration of a loop and move to the next one, based on a certain condition.</p>
+    <pre>
+        <code>
+for item in iterable:
+    if condition:
+        continue
+    # Code
+        </code>
+    </pre>
+    
+    <h2>4. Examples</h2>
+    <p>Here are some examples of control structures in Python:</p>
+    
+    <p><strong>Example of if statement:</strong></p>
+    <p>In this example, we use an <code>if</code> statement to check if a variable is greater than 5.</p>
+    <pre>
+        <code>
+x = 10
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is not greater than 5")
+        </code>
+    </pre>
+    
+    <p><strong>Example of for loop:</strong></p>
+    <p>In this example, we use a <code>for</code> loop to iterate over a list of fruits and print each fruit's name.</p>
+    <pre>
+        <code>
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+        </code>
+    </pre>
+    
+    <p><strong>Example of while loop:</strong></p>
+    <p>In this example, we use a <code>while</code> loop to print numbers from 0 to 4.</p>
+    <pre>
+        <code>
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+        </code>
+    </pre>
+    

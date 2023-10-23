@@ -1,0 +1,46 @@
+ <h2>Input and Output Methods in Python</h2>
+    
+    <h3>Input Methods:</h3>
+    <p>In Python, you can use the <strong>input()</strong> function to receive user input. It reads a line of text from the user and returns it as a string. Example:</p>
+    <code>
+        user_input = input("Enter your name: ")<br>
+        print("Hello, " + user_input)
+    </code>
+
+    <h3>Output Methods:</h3>
+    <p>Python offers several ways to output data, including <strong>print()</strong> for displaying text, <strong>formatted strings</strong> for more complex output, and <strong>writing to files</strong>. Example:</p>
+    <code>
+        age = 30<br>
+        print("Your age is", age)<br>
+        formatted_string = "Name: {}, Age: {}".format("Alice", age)<br>
+        print(formatted_string)
+    </code>
+
+    <h2>Sample Python Programs</h2>
+    <p>Here are three sample Python programs demonstrating the use of input and output methods:</p>
+
+    <h3>Program 1: Calculate the Sum of Two Numbers</h3>
+    <code>
+        num1 = float(input("Enter the first number: "))<br>
+        num2 = float(input("Enter the second number: "))<br>
+        result = num1 + num2<br>
+        print("Sum:", result)
+    </code>
+
+    <h3>Program 2: Convert Celsius to Fahrenheit</h3>
+    <code>
+        celsius = float(input("Enter the temperature in Celsius: "))<br>
+        fahrenheit = (celsius * 9/5) + 32<br>
+        print("Temperature in Fahrenheit:", fahrenheit)
+    </code>
+
+    <h3>Program 3: Display Information About a Person</h3>
+    <code>
+        name = input("Enter your name: ")<br>
+        age = int(input("Enter your age: "))<br>
+        print("Name:", name)<br>
+        print("Age:", age)
+    </code> <br>
+
+   
+

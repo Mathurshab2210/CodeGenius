@@ -1,0 +1,8 @@
+ <p>Python, like any programming language, has certain limitations:</p>
+    <ul>
+        <li><strong>Speed:</strong> Python is an interpreted language, which can result in slower execution speed compared to compiled languages.</li>
+        <li><strong>Global Interpreter Lock (GIL):</strong> Python's GIL can limit the performance of multi-threaded programs.</li>
+        <li><strong>Mobile Development:</strong> While Python has mobile development frameworks like Kivy and BeeWare, it is not the primary choice for mobile app development.</li>
+        <li><strong>Memory Control:</strong> Python's automatic memory management can limit fine-grained control over memory for certain applications.</li>
+        <li><strong>System-Level Programming:</strong> Python may not be the best choice for system-level or low-level programming tasks.</li>
+    </ul>
