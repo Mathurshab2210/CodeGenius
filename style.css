@@ -404,6 +404,12 @@ body {
     #Set2 p {
         font-size: 12px;
     }
+    #Set3{
+        margin-top: 25px;
+    }
+    #Set3 p {
+        font-size: 12px;
+    }
     #show-questions-button {
         width: 80px;
         font-size: 10px;
@@ -421,11 +427,90 @@ body {
     #questions2{
         font-size: 10px;
     }
+    #questions3{
+        font-size: 10px;
+    }
     .cmnbtn{
         font-size: 10px;
         margin: 3%;
     }
     .moving-text{
         font-size: 13px;
+    }
+}
+.horizontal-strip {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.left, .right {
+    padding: 10px;
+}
+
+/* Styling for the "Learn" element on the left */
+.left {
+   background-color: #0074a2;   /*  Blue color */
+   height: fit-content;
+   text-align: center;
+   margin-top: 5px;
+}
+
+/* Styling for the language buttons on the right */
+.language-button {
+    background-color: #ddd;
+  border: none;
+  color: black;
+  transition: 0.3s;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.language-button:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+  .language-button:active {
+    background-color: #557b56;
+    box-shadow: 0 5px #f3eeee;
+    transform: translateY(4px);
+  }
+
+/* Adjust the space between the buttons */
+.language-button:not(:last-child) {
+    margin-right: 10px;
+}
+@media (max-width: 780px){
+    .horizontal-strip{
+        flex-direction: column;
+    }
+    .language-button{
+        width:fit-content;
+        margin: 0 auto;
+    }
+
+}
+#message-box {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0074a2;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Hide by default */
+}
+
+@media (max-width: 768px) {
+    #message-box {
+        display: block; /* Show in mobile mode */
+        position: static;
+        margin-top: 20px;
+        text-align: center;
     }
 }
